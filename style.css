@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -13,7 +14,8 @@ body{
 
 .container {
     max-width: 1384px;
-    margin: 0 auto;   
+    margin: 0 auto; 
+    padding: 0 20px;  
 }
 
 header {
@@ -29,7 +31,6 @@ a {
 }
 
 .nav-top {
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,8 +107,13 @@ a {
     justify-content: space-between;
 }
 
+.section-block2 {
+    display: flex;
+    gap: 100px;
+}
+
 .block1 {
-    width: 479px;
+    max-width: 479px;
     padding-top: 100px;
 }
 
@@ -128,7 +134,7 @@ p {
 }
 
 .block2 img {
-    right: 120px;
+    width: 100%;
 }
 
 form {
@@ -256,6 +262,12 @@ input {
     font-weight: 400;
 }
 
+.d83 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*-- section3 --*/
 
 .text-h2 {
@@ -266,7 +278,7 @@ input {
 }
 
 .about {
-    width: 479px;
+    max-width: 479px;
     padding-top: 100px;
 }
 
@@ -309,9 +321,9 @@ input {
     margin-top: 64px;
 }
 
-.banner {
-    float: right;
-    margin-top: -39%;
+.section-banner {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*-- footer--*/
@@ -327,7 +339,7 @@ input {
 }
 
 .block-f {
-    width: 522px;
+    max-width: 522px;
     padding-top: 100px;
 }
 
@@ -342,8 +354,13 @@ p {
     margin-bottom: 25px;
 }
 
+.footer-block {
+    display: flex;
+    gap: 140px;
+}
+
 .block-f2 img {
-    right: 120px;
+    width: 100%;
 }
 
 form {
@@ -364,4 +381,436 @@ input {
 
 .btn1 {
     font-weight: 600;
+}
+
+
+
+
+
+
+/*-- media --*/
+
+@media screen and (max-width: 1208px) {
+    .header{
+        padding: 20px;
+    }
+    .nav-top{
+        margin-bottom: 25px;
+        display: block;
+    }
+    .ul{
+        justify-content: flex-start;
+    }
+    .ok{
+        margin: 0 0 25px;
+    }
+    .section1{
+        justify-content: center;
+    }
+    .card-inner{
+        display: block;        
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    .card1 .card2 .card3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-h3{
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+    }
+    .block2{
+        right: 15px;
+        top: 250px;
+    }
+    .section-h2{
+        text-align: center;
+    }
+    .block1{
+        padding: 20px;
+    }
+    .news-wrapper .news-block {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .news-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-title{
+        flex-direction: column;
+    }
+    .section-block2{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .section-banner{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .footer-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        padding: 15px;
+    }
+    .nav-top{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .ul{
+        justify-content: flex-start;
+    }
+    .ok{
+        margin: 0 0 20px;
+    }
+    .section1{
+        justify-content: center;
+    }
+    .card-inner{
+        display: block;        
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-h3{
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+    }
+    .text-h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .block2{
+        right: 15px;
+        top: 200px;
+    }
+    .section-h2{
+        text-align: center;
+    }
+    .text-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block1{
+        padding: 15px;
+    }
+    .news-wrapper .news-block {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .news-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-title{
+        flex-direction: column;
+    }
+    .section-block2{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .section-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .footer-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        padding: 15px;
+    }
+    .nav-top{
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .ul{
+        justify-content: flex-start;
+    }
+    .ok{
+        margin: 0 0 20px;
+    }
+    .section1{
+        justify-content: center;
+    }
+    .card-inner{
+        display: block;        
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-h3{
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+    }
+    .text-h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .block2{
+        right: 15px;
+        top: 200px;
+    }
+    .section-h2{
+        text-align: center;
+    }
+    .text-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block1{
+        padding: 15px;
+    }
+    .news-wrapper .news-block {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .news-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-title{
+        flex-direction: column;
+    }
+    .section-block2{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .section-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .footer-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .header{
+        padding: 10px;
+    }
+    .nav-top{
+        display: block;
+        margin-bottom: 15px;
+    }
+    .ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+    .ok{
+        margin: 0 0 10px;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-inner{
+        display: block;        
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-h3{
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+    }
+    .text-h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .block2{
+        right: 10px;
+        top: 100px;
+    }
+    .section-h2{
+        text-align: center;
+    }
+    .text-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .block1{
+        padding: 10px;
+    }
+    .news-wrapper .news-block {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .news-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-title{
+        flex-direction: column;
+    }
+    .block-number {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .section-block2{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .section-banner{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .block-number{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .block-f{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .h2{
+        text-align: center;
+    }
+    .footer-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 }
