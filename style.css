@@ -338,6 +338,8 @@ input {
 
 .banner {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 /*-- footer--*/
 
