@@ -475,7 +475,6 @@ input {
     .footer-block{
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 20px;
     }
@@ -686,6 +685,7 @@ input {
 }
 
 @media screen and (max-width: 611px) {
+
     .header{
         padding: 10px;
     }
@@ -802,7 +802,6 @@ input {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
     }
     .h2{
         text-align: center;
