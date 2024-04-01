@@ -326,6 +326,9 @@ input {
     justify-content: space-between;
 }
 
+.banner {
+    width: 100%;
+}
 /*-- footer--*/
 
 .footer {
@@ -472,6 +475,9 @@ input {
         align-items: center;
         padding: 20px;
     }
+    .banner {
+        width: 100%;
+    }
     .footer-block{
         width: 100%;
         display: flex;
@@ -546,6 +552,7 @@ input {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     .block1{
         padding: 15px;
@@ -649,6 +656,10 @@ input {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    .banner >img {
+        width: 100%;
     }
     .block1{
         padding: 15px;
@@ -756,7 +767,9 @@ input {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 100%;
+    }
+    .banner >img {
+        width: 100%;
     }
     .block1{
         padding: 10px;
